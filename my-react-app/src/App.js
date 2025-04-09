@@ -1,12 +1,11 @@
 import './App.css';
-import Todo from './Todo';
+import { SignUpForm } from './Form';
 
-//Main Page
 function App() {
   return (
     <div className="todo-container">
       <div className="card">
-        <Todo/>
+        <SignUpForm/>
       </div>
     </div>
   );
