@@ -20,7 +20,7 @@ export const SignUpForm = () => {
     }
     const handleFirstNameChange = (event) => {
         setFirstName(event.target.value);
-        var regexFName = /([a-z]{1,25})/gi
+        var regexFName = /([a-z]{1,})/gi
         if(regexFName.test(setFirstName.value)===true){
             firstNameError.textContent = ''
         }else{
@@ -30,7 +30,7 @@ export const SignUpForm = () => {
 
     const handlelastNameChange = (event) => {
         setLastName(event.target.value);
-        var regexLName = /([a-z]{1,25})/gi
+        var regexLName = /([a-z]{1,})/gi
         if(regexLName.test(setLastName.value)===true){
             lastNameError.textContent = ''
         }else{
